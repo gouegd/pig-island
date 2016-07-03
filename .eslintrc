@@ -1,0 +1,27 @@
+{
+  "parser": "babel-eslint",
+  "settings": {
+    "import/parser": "babel-eslint"
+  },
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "env": {
+    "browser": true,
+    "mocha": true
+  },
+  "extends": "airbnb",
+  "rules": {
+    // allow vertical spacing of code blocks
+    "padded-blocks": 0,
+    // dangling commas are not enforced
+    "comma-dangle": 0,
+    // allow backticks as a way to avoid escape characters
+    "quotes": [2, "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
+    // change from 100 to 120
+    "max-len": [1, 120],
+    // change to enforce spacing within JSX attributes
+    "react/jsx-curly-spacing": [1, "always"]
+  }
+}
