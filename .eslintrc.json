@@ -21,7 +21,9 @@
     "quotes": [2, "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
     // change from 100 to 120
     "max-len": [1, 120],
+    "import/prefer-default-export": 0,
     // change to enforce spacing within JSX attributes
-    "react/jsx-curly-spacing": [1, "always"]
+    "react/jsx-curly-spacing": [1, "always"],
+    "react/jsx-filename-extension": [0]
   }
 }
