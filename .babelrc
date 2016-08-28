@@ -1,8 +1,6 @@
 {
-  "presets": ["es2015", "stage-2", "react"],
-  "env": {
-    "test": {
-      "plugins": [ "__coverage__" ]
-    }
-  }
+  "presets": ["es2015", "stage-2"],
+  "plugins": [
+    ["transform-react-jsx", { "pragma": "h" }]
+  ]
 }

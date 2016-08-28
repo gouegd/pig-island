@@ -24,6 +24,8 @@
     "import/prefer-default-export": 0,
     // change to enforce spacing within JSX attributes
     "react/jsx-curly-spacing": [1, "always"],
-    "react/jsx-filename-extension": [0]
+    "react/jsx-filename-extension": 0,
+    // lets try this for a change...
+    "semi": [1, "never"]
   }
 }

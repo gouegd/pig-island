@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import firebase from 'firebase';
+/** @jsx h */
+import { render, h } from 'preact'
+import firebase from 'firebase'
 
-import App from './compos/App';
+import App from './compos/App'
 
 // Initialize Firebase
 const config = {
@@ -10,10 +10,7 @@ const config = {
   authDomain: 'pigisland-52edc.firebaseapp.com',
   databaseURL: 'https://pigisland-52edc.firebaseio.com',
   storageBucket: 'pigisland-52edc.appspot.com',
-};
-firebase.initializeApp(config);
+}
+firebase.initializeApp(config)
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+render(<App />, document.body)
